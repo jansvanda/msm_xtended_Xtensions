@@ -60,6 +60,9 @@ public class LockscreenUi extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mClockFontSize;
     private CustomSeekBarPreference mDateFontSize;
     private CustomSeekBarPreference mOwnerInfoFontSize;
+    private SwitchPreference mLockSett;
+    private CustomSeekBarPreference mLockRadius;
+    private CustomSeekBarPreference mLockScale;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -108,6 +111,18 @@ public class LockscreenUi extends SettingsPreferenceFragment implements
         mOwnerInfoFontSize.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCKOWNER_FONT_SIZE,21));
         mOwnerInfoFontSize.setOnPreferenceChangeListener(this);
+
+        mLockSett = (SwitchPreference) findPreference("lockscreen_blur");
+        mLockSett.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.LOCK_BLUR_PREFERENCE_KEY, 0) == 1));
+
+        mLockScale = (CustomSeekBarPreference) findPreference("lockscreen_blur_scale");
+        mLockScale.setValue(Settings.System.getInt(resolver, Settings.System.LOCK_BLUR_SCALE_PREFERENCE_KEY, 5));
+        mLockScale.setOnPreferenceChangeListener(this);
+
+        mLockRadius = (CustomSeekBarPreference) findPreference("lockscreen_blur_radius");
+        mLockRadius.setValue(Settings.System.getInt(resolver, Settings.System.LOCK_BLUR_RADIUS_PREFERENCE_KEY, 10));
+        mLockRadius.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -145,6 +160,20 @@ public class LockscreenUi extends SettingsPreferenceFragment implements
             int top = (Integer) newValue;
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKOWNER_FONT_SIZE, top*1);
+            return true;
+        } else if (preference == mLockSett) {
+            boolean enabled = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.LOCK_BLUR_PREFERENCE_KEY, enabled ? 1 : 0);
+        } else if (preference == mLockScale) {
+            int value = ((Integer)newValue).intValue();
+            Settings.System.putInt(
+                resolver, Settings.System.LOCK_BLUR_SCALE_PREFERENCE_KEY, value);
+            return true;
+        } else if(preference == mLockRadius) {
+            int value = ((Integer)newValue).intValue();
+            Settings.System.putInt(
+                resolver, Settings.System.LOCK_BLUR_RADIUS_PREFERENCE_KEY, value);
             return true;
         }
         return false;

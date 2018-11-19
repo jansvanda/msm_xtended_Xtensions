@@ -1670,4 +1670,15 @@
     <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
     <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
 
+    <!-- Lockscreen Blur -->
+    <string name="blur_cat_notice">Notice</string>
+    <string name="blur_lockscreen_cat">Lockscreen</string>
+    <string name="lock_blur_notice_summary">This does not use the hardware layer impementation instead uses the android WallpaperManager API and FastBlur. It blurs the current homescreen wallpaper and applies it to the lockscreen.\nSince we are just applying a wallpaper, it is a one time process. Hence no battery is lost each time the user presses the power button.</string>
+    <string name="lockscreen_blur_notice">Blur lockscreen</string>
+    <string name="blur_lockscreen_summary">Blur the lockscreen wallpaper.</string>
+    <string name="blurred_scale">Blur Scale</string>
+    <string name="blurred_scale_summary">Quailty of blur image</string> 
+    <string name="blurred_radius">Blur Radius</string>
+    <string name="blurred_radius_summary">Amount of blur</string>
+
 </resources>

@@ -96,5 +96,37 @@
         android:summary="@string/hide_lockscreen_icon_summary"
         android:defaultValue="false" />
 
+    <PreferenceCategory
+        android:key="blur_lockscreen_cat"
+        android:title="@string/blur_lockscreen_cat" >        
+        <Preference
+            style="?android:preferenceInformationStyle"
+            android:title="@string/blur_cat_notice"
+            android:summary="@string/lock_blur_notice_summary"
+            android:selectable="false" />
+            
+        <SwitchPreference
+            android:key="lockscreen_blur"
+            android:title="@string/lockscreen_blur_notice"
+            android:summary="@string/blur_lockscreen_summary"
+            android:defaultValue="false" />
+			
+        <com.msm.xtended.preferences.CustomSeekBarPreference
+            android:key="lockscreen_blur_scale"
+            android:title="@string/blurred_scale"
+            android:max="20"
+            settings:min="1"
+            android:dependency="lockscreen_blur"
+            android:defaultValue="5" />
+			
+        <com.msm.xtended.preferences.CustomSeekBarPreference
+            android:key="lockscreen_blur_radius"
+            android:title="@string/blurred_radius"
+            android:max="25"
+            settings:min="1"
+            android:dependency="lockscreen_blur"
+            android:defaultValue="10" />            
+    </PreferenceCategory>        
+
 </PreferenceScreen>
 
