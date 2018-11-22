@@ -79,7 +79,7 @@
 
     <!-- OnePlus Shit -->
     <string name="device_part_title">OnePlus Shit</string>
-    <string name="device_part_summary">OnePlus Speicific Features</string>
+    <string name="device_part_summary">OnePlus Specific Features</string>
 
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Call Notification Options</string>
