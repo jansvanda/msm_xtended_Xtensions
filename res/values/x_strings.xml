@@ -36,7 +36,7 @@
     <string name="powermenu_summary">Power Menu Customizations</string>
     <string name="quicksettings_summary">Quick Settings Options</string>
     <string name="recents_summary">Recents Apps Menus</string>
-    <string name="statusbar_summary">Status Bar Customizations</string>
+    <string name="statusbar_summary">StatusBar Customizations</string>
     <string name="notifications_summary">Notifications Options</string>
     <string name="system_summary">Modify Generic System Settings</string>
     <string name="decorroom_title">Decor Room</string>
@@ -131,7 +131,7 @@
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
 
-    <!-- Status bar battery style-->
+    <!-- Statusbar battery style-->
     <string name="status_bar_battery_style_title">Battery style</string>
     <string name="status_bar_battery_style_port">Portrait</string>
     <string name="status_bar_battery_style_circle">Circle</string>
@@ -141,7 +141,7 @@
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
 
-    <!-- Status bar - Battery custom charging symbol -->
+    <!-- Statusbar - Battery custom charging symbol -->
     <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
     <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
     <string name="text_charging_symbol_default">Disabled</string>
@@ -412,7 +412,7 @@
 
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
-    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the statusbar</string>
 
     <!-- Battery Bar -->
     <string name="battery_bar_title">Battery Bar</string>
@@ -631,8 +631,8 @@
     <string name="torch_long_press_power_timeout_10min">10 minutes</string>
 
     <!-- Custom carrier label and position -->
-    <string name="carrier_label_category_title">CarrierLabel Settings</string>
-    <string name="carrier_label_category_summary">Customize statusbar carrierlabel</string>
+    <string name="carrier_label_category_title">Carrier Label</string>
+    <string name="carrier_label_category_summary">Customize statusbar carrier label</string>
     <string name="carrier_label_settings_title">Carrier Label</string>
     <string name="carrier_label_settings_summary">Customize the carrier label</string>
     <string name="custom_carrier_label_title">Custom carrier label</string>
@@ -766,9 +766,9 @@
     <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot without PIN/Password/Pattern\nNote: at your own risk!</string>
 
     <!-- StatusBar weather settings -->
-    <string name="statusbar_weather_title">Status bar weather</string>
-    <string name="statusbar_weather_summary">Configure from QS settings/Weather</string>
-    <string name="statusbar_weather_dialog_title">Status bar weather style</string>
+    <string name="statusbar_weather_title">Statusbar weather</string>
+    <string name="statusbar_weather_summary">Configure the QS/statusbar weather</string>
+    <string name="statusbar_weather_dialog_title">Statusbar weather style</string>
     <string name="status_bar_weather_hidden">Hide weather</string>
     <string name="status_bar_temperature_image_show_scale">Show temp with scale and image</string>
     <string name="status_bar_temperature_image_hide_scale">Show temp with image without scale</string>
@@ -885,8 +885,8 @@
     <string name="time_in_state_summary">Show CPU frequency statistics</string>
 
     <!-- Hide On Lockscreen -->
-    <string name="hide_lockscreen_status_bar_title">Hide status bar</string>
-    <string name="hide_lockscreen_status_bar_summary">Touch status bar to toggle visibility</string>
+    <string name="hide_lockscreen_status_bar_title">Hide statusbar</string>
+    <string name="hide_lockscreen_status_bar_summary">Touch statusbar to toggle visibility</string>
 
     <!-- Disabling FC notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
@@ -939,7 +939,7 @@
 
     <!-- Statusbar logo -->
     <string name="status_bar_logo_category_title">Statusbar Logo</string>
-    <string name="status_bar_logo_category_summary">Enable to display logo in the status bar</string>
+    <string name="status_bar_logo_category_summary">Enable to display logo in the statusbar</string>
     <string name="status_bar_logo_title">Xtended logo</string>
     <string name="status_bar_logo_right">Right</string>
     <string name="status_bar_logo_left">Left</string>
@@ -1117,8 +1117,8 @@
 
     <!-- Quick pull down-->
     <string name="quick_pulldown_title">Quick pulldown</string>
-    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
+    <string name="quick_pulldown_summary">%1$s edge of the statusbar pulls down Quick Settings</string>
+    <string name="quick_pulldown_summary_always">Always show Quick Settings on statusbar pulldown</string>
     <string name="quick_pulldown_off">Off</string>
     <string name="quick_pulldown_left">Left</string>
     <string name="quick_pulldown_right">Right</string>
@@ -1315,7 +1315,7 @@
     <string name="statusbar_notifi_cat">Notifications Ticker</string>
     <string name="status_bar_ticker_title">Ticker</string>
     <string name="status_bar_show_ticker_title">Ticker</string>
-    <string name="status_bar_show_ticker_summary">Notification preview in status bar</string>
+    <string name="status_bar_show_ticker_summary">Notification preview in statusbar</string>
     <string name="ticker_animation_mode_title">Ticker animation</string>
     <string name="ticker_animation_mode_alpha_fade">Fade</string>
     <string name="ticker_animation_mode_scroll">Scroll</string>
@@ -1439,7 +1439,7 @@
     <string name="breathing_notifications_category">Breathing Notifications</string>
     <string name="breathing_notifications_title">Breathing notifications</string>
     <string name="sms_breath_title">Breathing SMS</string>
-    <string name="sms_breath_summary">Will give your sms notifications a breathing effect in the status bar</string>
+    <string name="sms_breath_summary">Will give your sms notifications a breathing effect in the statusbar</string>
     <string name="missed_call_breath_title">Breathing Missed Call</string>
     <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the statusbar</string>
     <string name="voicemail_breath_title">Breathing Voicemail</string>
